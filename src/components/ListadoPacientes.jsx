@@ -1,4 +1,4 @@
-import Pacientes from "./pacientes"
+import Pacientes from "./Pacientes"
 
 function ListadoPacientes({pacientes, setPaciente, eliminarPaciente}) {
     return (
