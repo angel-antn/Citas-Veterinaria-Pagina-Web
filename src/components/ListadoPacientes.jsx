@@ -33,8 +33,8 @@ function ListadoPacientes({pacientes, setPaciente, eliminarPaciente}) {
                     No Hay Pacientes
                     </h2>
                     <p className="font-bold text-xl mt-5 text-center mb-10 text-gray-200">
-                        Comienza Agregando Pacientes{" "}
-                        <span className="text-amber-600">y Apareceran en este Lugar</span>
+                        Comienza Agregando Pacientes y{" "}
+                        <span className="text-amber-600">Apareceran en este Lugar</span>
                     </p>
                 </>
             }
