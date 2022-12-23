@@ -1,8 +1,8 @@
 import Pacientes from "./Pacientes"
 
-function ListadoPacientes({pacientes, setPaciente, eliminarPaciente}) {
+function ListadoPacientes({pacientes, setPaciente, modalEliminarPaciente}) {
     return (
-        <div className="md:w-1/2 lg:w-3/5 mx-5">
+        <div className="md:h-screen md:w-1/2 lg:w-3/5 mx-5">
             {
                 pacientes && pacientes.length ? 
                 <>
@@ -13,14 +13,14 @@ function ListadoPacientes({pacientes, setPaciente, eliminarPaciente}) {
                         Administra tus{" "}
                         <span className="text-amber-600">Pacientes y Citas</span>
                     </p>
-                    <div className="md:h-screen md:overflow-y-scroll scrollbar-hidden">
+                    <div className="md:h-screen md:overflow-y-scroll">
                         {
                             pacientes.map(paciente =>
                                 <Pacientes
                                     key={paciente.id}
                                     paciente={paciente}
                                     setPaciente={setPaciente}
-                                    eliminarPaciente={eliminarPaciente}
+                                    modalEliminarPaciente={modalEliminarPaciente}
                                 />
                             )
                         }
